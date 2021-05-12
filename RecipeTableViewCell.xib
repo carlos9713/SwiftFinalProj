@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="RecipeTableViewCell" rowHeight="229" id="KGk-i7-Jjw" customClass="RecipeTableViewCell" customModule="CookBook" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="569" height="229"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="569" height="229"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="sW3-oj-HCx">
+                        <rect key="frame" x="5" y="39.5" width="150" height="150"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="150" id="Ks0-PE-R5p"/>
+                            <constraint firstAttribute="width" constant="150" id="uWu-YT-lns"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" text="American Burger" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1bI-ja-6lH">
+                        <rect key="frame" x="165" y="5" width="394" height="23"/>
+                        <fontDescription key="fontDescription" type="boldSystem" pointSize="19"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3Ho-Hh-r3u">
+                        <rect key="frame" x="165" y="33" width="394" height="152"/>
+                        <string key="text">If you are planning a burger party at some restaurants, no celebration is complete without pictures, get ready to take party pictures because we provide you ready-made Burger Recipe.</string>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Added 3h age" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qHV-pq-Oot">
+                        <rect key="frame" x="165" y="195" width="130.5" height="24"/>
+                        <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                        <color key="textColor" red="0.30588235289999999" green="0.73725490199999999" blue="0.1137254902" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gRB-gc-aco">
+                        <rect key="frame" x="538.5" y="195" width="20.5" height="24"/>
+                        <color key="tintColor" systemColor="systemRedColor"/>
+                        <state key="normal" image="heart" catalog="system"/>
+                        <state key="selected" image="heart.fill" catalog="system">
+                            <color key="titleColor" systemColor="labelColor"/>
+                        </state>
+                        <connections>
+                            <action selector="like:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="9kx-vf-tkh"/>
+                        </connections>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="sW3-oj-HCx" secondAttribute="bottom" constant="20" id="4ku-lM-bRX"/>
+                    <constraint firstItem="3Ho-Hh-r3u" firstAttribute="leading" secondItem="sW3-oj-HCx" secondAttribute="trailing" constant="10" id="Aka-Sa-gXW"/>
+                    <constraint firstItem="1bI-ja-6lH" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="5" id="EHc-YL-OgR"/>
+                    <constraint firstItem="sW3-oj-HCx" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="LpB-tt-NPi"/>
+                    <constraint firstItem="qHV-pq-Oot" firstAttribute="leading" secondItem="sW3-oj-HCx" secondAttribute="trailing" constant="10" id="Vca-YU-owr"/>
+                    <constraint firstItem="3Ho-Hh-r3u" firstAttribute="top" secondItem="1bI-ja-6lH" secondAttribute="bottom" constant="5" id="WsM-cT-eqd"/>
+                    <constraint firstItem="1bI-ja-6lH" firstAttribute="leading" secondItem="sW3-oj-HCx" secondAttribute="trailing" constant="10" id="YmC-I6-9T9"/>
+                    <constraint firstAttribute="bottom" secondItem="gRB-gc-aco" secondAttribute="bottom" constant="10" id="amj-h2-nbU"/>
+                    <constraint firstAttribute="trailing" secondItem="1bI-ja-6lH" secondAttribute="trailing" constant="10" id="dUu-mJ-HvL"/>
+                    <constraint firstItem="sW3-oj-HCx" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="5" id="duA-fh-9Jh"/>
+                    <constraint firstItem="gRB-gc-aco" firstAttribute="top" secondItem="3Ho-Hh-r3u" secondAttribute="bottom" constant="10" id="hGq-40-Imf"/>
+                    <constraint firstItem="qHV-pq-Oot" firstAttribute="top" secondItem="3Ho-Hh-r3u" secondAttribute="bottom" constant="10" id="itq-Jj-hY1"/>
+                    <constraint firstAttribute="bottom" secondItem="qHV-pq-Oot" secondAttribute="bottom" constant="10" id="pEr-V7-vOn"/>
+                    <constraint firstAttribute="trailing" secondItem="gRB-gc-aco" secondAttribute="trailing" constant="10" id="qcX-K6-Mhv"/>
+                    <constraint firstItem="3Ho-Hh-r3u" firstAttribute="top" secondItem="1bI-ja-6lH" secondAttribute="bottom" constant="5" id="slJ-R2-OdJ"/>
+                    <constraint firstAttribute="trailing" secondItem="3Ho-Hh-r3u" secondAttribute="trailing" constant="10" id="x02-kn-Ng7"/>
+                    <constraint firstItem="gRB-gc-aco" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="qHV-pq-Oot" secondAttribute="trailing" constant="10" id="xfF-WZ-TB5"/>
+                    <constraint firstItem="sW3-oj-HCx" firstAttribute="top" relation="greaterThanOrEqual" secondItem="H2p-sc-9uM" secondAttribute="top" constant="20" id="zce-1K-w0D"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="foodImage" destination="sW3-oj-HCx" id="dAL-8s-pJv"/>
+                <outlet property="foodName" destination="1bI-ja-6lH" id="ckM-62-e4k"/>
+                <outlet property="recipeTitle" destination="3Ho-Hh-r3u" id="63J-8x-UB6"/>
+                <outlet property="time" destination="qHV-pq-Oot" id="uTR-Uw-xoc"/>
+            </connections>
+            <point key="canvasLocation" x="332.60869565217394" y="172.43303571428569"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="heart" catalog="system" width="128" height="109"/>
+        <image name="heart.fill" catalog="system" width="128" height="109"/>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemRedColor">
+            <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
